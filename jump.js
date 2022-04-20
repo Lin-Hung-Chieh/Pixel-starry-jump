@@ -1895,7 +1895,7 @@ var link, jsGame; (function() {
     var B = navigator.userAgent.toLowerCase(),
     C = !1;
     0 <= B.indexOf("android") && 0 <= B.indexOf("chrome") && (C = !0);
-    g.init(320, 550).pushImage([{
+    g.init(288, 512).pushImage([{
         id: "bg1",
         src: "img/bg1.jpg"
     },
@@ -2051,31 +2051,31 @@ var link, jsGame; (function() {
             obsMapping: {
                 mp1: {
                     id: "s2",
-                    sx: 112,
-                    sy: 130,
+                    sx: 118,
+                    sy: 209,
                     width: 52,
-                    height: 320
+                    height: 168
                 },
                 mp2: {
                     id: "s2",
                     sx: 168,
-                    sy: 130,
+                    sy: 209,
                     width: 52,
-                    height: 320
+                    height: 237
                 },
                 mp3: {
                     id: "s2",
                     sx: 0,
                     sy: 130,
                     width: 52,
-                    height: 320
+                    height: 250
                 },
                 mp4: {
                     id: "s2",
                     sx: 56,
                     sy: 130,
                     width: 52,
-                    height: 320
+                    height: 250
                 }
             },
             screenFlush: [],
@@ -2106,11 +2106,11 @@ var link, jsGame; (function() {
                 switch (this.bgType) {
                 default:
                     b = "bg1";
-                    this.bgColor = "#4EC0CA";
+                    this.bgColor = "#060719";
                     break;
                 case 2:
                     b = "bg2",
-                    this.bgColor = "#038794"
+                    this.bgColor = "#1c0d48"
                 }
                 g.canvas.pass("bgCache", this.bgWidth, this.bgHeight).drawImage(b, 0, this.bgHeight - this.bgImgH).drawImage(b, this.bgImgW, this.bgHeight - this.bgImgH).pass();
                 return this
@@ -2143,15 +2143,15 @@ var link, jsGame; (function() {
                     x: w,
                     y: -(d.height - b),
                     width: 52,
-                    height: 320,
+                    height: 168,
                     imgObj: d
                 });
                 this.obses.push({
                     id: g.getNewGuid(),
                     x: w,
-                    y: b + 100,
+                    y: b + 140,
                     width: 52,
-                    height: 320,
+                    height: 168,
                     imgObj: e
                 });
                 return this
